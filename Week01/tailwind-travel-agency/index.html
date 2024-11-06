@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Travel Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              pattern: "url('images/header-background.png')",
+            },
+            colors: {
+              orange: "#ffcb9a",
+            },
+            fontFamily: {
+              system: ["system-ui"],
+              cursive: ["cursive"],
+            },
+            borderRadius: {
+              large: "3rem",
+            },
+            minWidth: {
+              128: "32rem",
+            },
+            width: {
+              128: "32rem",
+            },
+            flex: {
+              image: "0 0 32rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-w-128 box-border">
+    <header class="h-lvh flex flex-col bg-pattern bg-cover">
+      <nav class="p-10 bg-white/15">
+        <ul class="max-w-xl m-auto flex justify-around">
+          <li>
+            <a
+              class="font-system font-medium text-xl text-white hover:underline hover:decoration-orange"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-system font-medium text-xl text-white hover:underline hover:decoration-orange"
+              href="#"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-system font-medium text-xl text-white hover:underline hover:decoration-orange"
+              href="#"
+              >Tour Packages</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-system font-medium text-xl text-white hover:underline hover:decoration-orange"
+              href="#"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <article class="p-10 flex-auto flex flex-col justify-center items-center">
+        <div class="max-w-3xl flex flex-col items-center">
+          <h2 class="text-center font-cursive text-white text-4xl mb-6">
+            Our team cares about your full relax
+          </h2>
+          <p class="text-center text-xl text-white mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+            consequatur officiis, officia eum dignissimos neque. Odio,
+            reiciendis placeat. Aspernatur obcaecati corrupti vitae error, et
+            temporibus quibusdam molestiae eum magnam animi!
+          </p>
+          <button
+            class="px-5 py-4 text-white bg-transparent border border-white rounded-large"
+          >
+            View our Tour Packages
+          </button>
+        </div>
+      </article>
+    </header>
+
+    <main>
+      <section class="h-lvh flex flex-col">
+        <div class="flex-auto p-10 flex justify-center items-center">
+          <div
+            class="max-w-6xl flex flex-col items-center gap-20 lg:flex-row lg:items-start"
+          >
+            <figure class="lg:flex-image h-full">
+              <img
+                class="w-full h-full rounded-2xl"
+                src="images/about-image.jpg"
+                alt=""
+              />
+            </figure>
+            <article>
+              <h2 class="font-medium text-4xl mb-6">
+                We Are The Heart Of Köln To Offer You The Best
+              </h2>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis ratione earum necessitatibus dicta officia nisi
+                dolores. Neque ex, at vel possimus velit delectus rerum atque
+                similique ducimus, asperiores sint nostrum! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Ad quasi dolores facere
+                consequuntur porro rerum ipsum atque. Deserunt ratione,
+                suscipit, harum nesciunt nam voluptatem ducimus aperiam sint
+                recusandae omnis eius?
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- all adventages -->
+        <div class="p-10 bg-orange">
+          <div class="max-w-6xl m-auto flex flex-wrap justify-center gap-16">
+            <!-- one adventage -->
+            <div
+              class="flex flex-col items-center gap-4 w-56 h-36 p-6 rounded-3xl bg-white/30"
+            >
+              <figure class="w-10 h-10">
+                <img class="w-full h-full" src="images/icon_map.png" alt="" />
+              </figure>
+              <p class="text-sm font-semibold text-center">
+                Complete Packages For All Your Wishes
+              </p>
+            </div>
+
+            <!-- one adventage -->
+            <div
+              class="flex flex-col items-center gap-4 w-56 h-36 p-6 rounded-3xl bg-white/30"
+            >
+              <figure class="w-10 h-10">
+                <img
+                  class="w-full h-fulle"
+                  src="images/icon_experience.png"
+                  alt=""
+                />
+              </figure>
+              <p class="text-sm font-semibold text-center">
+                Over 30 Years Of Experience
+              </p>
+            </div>
+
+            <!-- one adventage -->
+            <div
+              class="flex flex-col items-center gap-4 w-56 h-36 p-6 rounded-3xl bg-white/30"
+            >
+              <figure class="w-10 h-10">
+                <img
+                  class="w-full h-fulle"
+                  src="images/icon_guide.png"
+                  alt=""
+                />
+              </figure>
+              <p class="text-sm font-semibold text-center">
+                Expert Guides For You
+              </p>
+            </div>
+
+            <!-- one adventage -->
+            <div
+              class="flex flex-col items-center gap-4 w-56 h-36 p-6 rounded-3xl bg-white/30"
+            >
+              <figure class="w-10 h-10">
+                <img
+                  class="w-full h-fulle"
+                  src="images/icon_best price.png"
+                  alt=""
+                />
+              </figure>
+              <p class="text-sm font-semibold text-center">
+                Guaranteed fun at the best price!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

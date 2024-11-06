@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp Form</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>Bootcamp Signup</h1>
+    <form method="post">
+      <!-- Address Info -->
+      <fieldset>
+        <legend>Address Info</legend>
+
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required autocomplete="given-name">
+        </div><br>
+        <div>
+          <label for="family-name">Family Name</label>
+          <input type="text" name="family-name" id="family-name" required autocomplete="family-name">
+        </div><br>
+        <div>
+          <label for="street">Street</label>
+          <input type="text" name="street" id="street" required autocomplete="address-line1">
+        </div><br>
+        <div>
+          <label for="house-number">House Nr.</label>
+          <input type="number" name="house-number" id="house-number" min="1" required>
+        </div><br>
+        <div>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" required autocomplete="address-level2">
+        </div><br>
+
+      </fieldset>
+
+      <!-- Options -->
+      <fieldset>
+        <legend>Select your Bootcamp</legend>
+        <label for="course">Course</label>
+        <select name="course" id="course" required>
+          <option value="">Please select one</option>
+          <option value="WD">Web & App Development</option>
+          <option value="DS">Data Science</option>
+          <option value="UI">UI/UX Design</option>
+          <!-- <option value="">Albanien</option>
+          <option value="">Benin</option>
+          <option value="">Kamerun</option>
+          <option value="">Bolivien</option>
+          <option value="">Brasilien</option>  -->
+        </select>
+      </fieldset>
+
+      <!-- Personal Info -->
+      <fieldset>
+        <legend>Personal Info</legend>
+        <p>Is chocolate your favourite flavour of ice cream?</p>
+        <input type="radio" name="flavour" id="fl-yes" value="yes">
+        <label for="fl-yes">Yes</label>
+        <input type="radio" name="flavour" id="fl-no" value="no">
+        <label for="fl-no">No</label>
+        <input type="radio" name="flavour" id="fl-none" value="no-answer">
+        <label for="fl-none">I don't want to answer that</label>
+      </fieldset>
+
+      <!-- Terms & Newsletter -->
+      <fieldset>
+        <legend>Terms & Newsletter</legend>
+        <p>Do you accept <a href="#">our terms</a></p>
+        <div>
+          <input type="checkbox" name="terms" id="terms" required>
+          <label for="terms">I agree</label>
+        </div>
+
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Do you want to get fresh news from us?</label>
+
+      </fieldset>
+
+      <!-- Submit btn -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+
+</body>
+
+</html>

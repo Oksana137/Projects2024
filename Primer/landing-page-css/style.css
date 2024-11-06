@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: rgb(73, 84, 101);
+}
+
+.general__container {
+  max-width: 850px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+.accent__container {
+  padding: 2rem;
+  background: linear-gradient(#059669, #34d399);
+  color: white;
+  text-align: center;
+}
+
+.accent__container h1,
+.accent__container h2 {
+  color: white;
+}
+
+.content__container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.content__container h2 {
+  padding-bottom: 2rem;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.about,
+.contact {
+  background-color: rgb(242, 244, 247);
+}
+
+.picture__container {
+  height: 350px;
+  background: url("dog.jpg") no-repeat;
+}
+
+input,
+textarea {
+  width: 300px;
+  margin: 0.5rem 0;
+  border: 1px solid #d1d5db;
+  border-radius: 0.2rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+}
+
+input {
+  height: 1.8rem;
+}
+
+textarea {
+  height: 3.5rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: rgb(94, 184, 139);
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}

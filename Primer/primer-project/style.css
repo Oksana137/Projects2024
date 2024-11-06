@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/* styles for main block */
+
+main {
+    font-family: sans-serif;
+}
+
+.subjects {
+    max-width: 85%;
+    margin: 8rem auto 4rem;
+    padding: 0 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 3rem;
+}
+
+.subject {
+    flex: 0 0 45%;
+    display: flex;
+    gap: 2rem;
+
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .subject {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}
+
+.subject__figure {
+    flex: 0 0 auto;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.subject__image {
+    width: 100%;
+    height: 100%;
+}
+
+.subject__heading {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.subject__description {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.subject__link {
+    color: #4C5FD5;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.subject__link:hover {
+    text-decoration: underline;
+}
